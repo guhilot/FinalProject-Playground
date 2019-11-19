@@ -9,7 +9,7 @@
     if($conn->connect_error){
         die("Failed connection" . $conn->connect_error);
     }
-    $sql = "SELECT id, Name, Contact from Partner";
+    $sql = "SELECT C_id, C_name from Course";
 
     $result = $conn->query($sql);
     if($result->num_rows>0){
