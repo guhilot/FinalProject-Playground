@@ -39,7 +39,7 @@
     </style>
 </head>
 <body>
-    <div class = "container">
+<div class = "container">
 
     <div class="row">
             <div class="box box1 col-xs-12">
@@ -76,25 +76,8 @@
             </div>
             <div class = "box6 col-xs-4"></div>
         </div>
-        <!--
-        <div class="website">
-            <h2 id="messagedisplay"></h2>
-        </div>
-
-       
-
-        <div class ="formpost">
-            <div class="searchpanel">
-                <input type="text" class="searchbox" name="id" id="id" placeholder="Enter Course number">
-                <input type="submit" class="searchbtn" name="searchdata" id="searchdata" value="SEARCH">
-            </div>
-            <form id="vikformid" method="post">
-
-            </form>
-        </div> -->
     </div>
-    
-    </div>
+</div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript">  
     $(document).ready(function(){
