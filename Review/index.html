@@ -80,8 +80,29 @@
             </div>
         </div>
 </div>
-    <script>
-         $(document).ready(function () {
+<script>
+            $("form").submit(function(e){
+            e.preventDefault();
+            $.post(
+                //   'insert.php'
+                $("form").attr('action'),
+                //{
+                //   productname:$("#name").val(),
+                //   brandname:$("#brand").val(),
+                //   quantity:$("#quantity").val()
+                //}
+                 $("form :input").serializeArray(),
+                function(result){
+                    if(result=="success"){
+                        $("#result").html("Values inserted");
+                    }else{
+                        $("#result").html("Values not inserted");
+                    }
+                }
+            );
+
+});
+$(document).ready(function () {
             ajax_call = function() {
                 $.ajax({type: "GET", url: "getrecords.php", }).done(function(data){
                 var result = $.parseJSON(data);
@@ -95,10 +116,7 @@
     var interval = 1;
     setInterval(ajax_call, interval);
     });
-
-
-    </script>
-    
+</script>  
 </body>
 </html>
 
