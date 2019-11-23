@@ -81,7 +81,7 @@
         </div>
 </div>
 <script>
-            $("form").submit(function(e){
+        $("form").submit(function(e){
             e.preventDefault();
             $.post(
                 //   'insert.php'
@@ -101,9 +101,9 @@
                 }
             );
 
-});
-$(document).ready(function () {
-            ajax_call = function() {
+        });
+                $(document).ready(function () {
+                ajax_call = function() {
                 $.ajax({type: "GET", url: "getrecords.php", }).done(function(data){
                 var result = $.parseJSON(data);
                 var string='<table width="100%"><tr><th>#</th><th>Reviews</th></tr>';

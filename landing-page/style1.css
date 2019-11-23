@@ -1,0 +1,57 @@
+.box{
+    
+    padding: 20px;
+    
+}
+
+.box1{
+    height: 150px;
+    
+}
+.box2{
+    height:300px;
+    margin-top: 10px;
+    border:10px solid antiquewhite;
+    background-color:turquoise;
+    background-image: url(imgs/activitypic1.jpg);
+    background-size: cover;
+
+}
+h4{
+    text-align: center;
+    margin-top: 80px;
+    color:grey
+}
+
+.box2:hover{
+    opacity:0.5;
+}
+
+
+.box3{
+    height:300px;
+    margin-top: 10px;
+    border:10px solid antiquewhite;
+    background-color:turquoise;
+    background-image: url(imgs/studying.jpg);
+    background-size: cover; 
+}
+.box3:hover{
+    opacity:0.5;
+}
+
+#sb1:hover{
+visibility: visible;
+}
+.box4{
+    height:300px;
+    margin-top: 10px;
+    border:10px solid antiquewhite;
+    background-color:turquoise;
+    background-image: url(imgs/carpool.jpg);
+    background-size: cover; 
+}
+.box4:hover{
+    opacity:0.5;
+}
+
