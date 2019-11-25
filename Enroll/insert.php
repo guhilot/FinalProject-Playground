@@ -15,20 +15,4 @@ if($stmt->execute()){
 }else{
     echo 'failure';
 }
-
-$stmt = $con->prepare("INSERT INTO `Course` (`C_id`, `C_name`) VALUES (?, ?)");
-$stmt->bind_param("is",$course,$cname);
-if($stmt->execute()){
-    echo 'success';
-}else{
-    echo 'failure';
-}
-
-$stmt = $con->prepare("INSERT INTO `Partner_rel` (`id`, `C_id`) VALUES (?, ?)");
-$stmt->bind_param("ii",$id,$course);
-if($stmt->execute()){
-    echo 'success';
-}else{
-    echo 'failure';
-}
 ?>

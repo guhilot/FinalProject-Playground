@@ -64,9 +64,10 @@
 
         </div>
     <div class="box3 f1 col-xs-2">
-            <form method='POST' action="insert.php">
-                    <div class="t1"><input type="text" id="name" name="name" placeholder="enter your name"/></div>
-                    <div class="t2"><input type="number" id="contact" name="contact" placeholder="enter phone number"/></div>
+            <form method='POST' action="insert1.php">
+                    <div class="t1"><input type="number" id="id" name="id" placeholder="enter your id"/></div>
+                    <div class="t2"><input type="number" id="course" name="course" placeholder="enter course number"/></div>
+                    <div class="t2"><input type="text" id="cname" name="cname" placeholder="enter course name"/></div>
                     <!--<div class="t3"><input type="number" id="course" name="course" placeholder="enter course number"/></div>
                     <div class="t3"><input type="text" id="cname" name="cname" placeholder="enter course name"/></div>-->
                     <button class="btn-primary btn">Submit</button>
@@ -81,8 +82,6 @@
             </div>
         
     </div>
-    <br>
-    <label><a href = 'http://localhost:8080/FinalProject-Playground/Enroll/index1.html'>Click here </a> to register the classes that you want to be a mentor for</label>
     <div class="box4 col-xs-5">
 
 
@@ -125,20 +124,6 @@
                     }
                 }
             );
-            $(document).ready(function () {
-            ajax_call = function() {
-            $.ajax({type: "GET", url: "getrecords.php", }).done(function(data){
-            var result = $.parseJSON(data);
-            var string='<table width="100%"><tr><th>Your ID # is:</th></tr>';
-            $.each( result, function( key, value ) { 
-             string += "<tr> <td>"+value['max(id)'] + "</td></tr>"; }); 
-             string += '</table>'; 
-             $("#records1").html(string);
-            })
-        };
-    var interval = 1;
-    setInterval(ajax_call, interval);
-    });
 });
 
 

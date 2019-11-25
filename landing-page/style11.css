@@ -1,8 +1,7 @@
-.box{
-    
+.box{ 
     padding: 20px;
-    
 }
+
 
 .box1{
     height: 150px;
@@ -54,4 +53,5 @@ visibility: visible;
 .box4:hover{
     opacity:0.5;
 }
+
 
