@@ -15,6 +15,7 @@
   </head>
 
   <body>
+
     <!--navigation bar
     <nav class="navbar navbar-dark bg-dark" style="background-color:teal">
         <span class="navbar-brand mb-0 h1">ACTIVITY</span>
@@ -36,20 +37,23 @@
         </ul>
       </div>
     </nav>-->
+    <!--navigation bar-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="http://localhost:8080/FinalProject-Playground/landing-page/index1.html">HOME</a></li>
+                <li><a href="http://localhost:8080/FinalProject-Playground/Review/index.html">Write a Review</a></li>
+                <li><a href="http://localhost:8080/FinalProject-Playground/Enroll/index1.html">Already a Partner</a></li>
+
+            </ul>
+        </div>
+    </nav>
 
     <!--container-->
     <div class="container">
-        <div class="row">
-            <div class="box box1 col-xs-12">
-                <ul>
-                    <li><a href="http://localhost:8080/FinalProject-Playground/landing-page/index1.html">Home</a></li>
-                    <li><a href="http://localhost:8080/FinalProject-Playground/Review/index.html">Write a Review</a></li>
-                    <li><a href="http://localhost:8080/FinalProject-Playground/AEnroll/index1.html">Already a Partner</a></li>
-                </ul>
-            </div><!--nav-->
-            <div class="box box2 col-xs-12"></div> <!--Blank-->
-
-        </div><!--1st row-->
+       <!--1st row-->
       <!--row1-->
       <div class="row">
         <div class="box box3 col-xs-8">
@@ -246,6 +250,7 @@
           </div>
       </div>
     </div>
+<<<<<<< HEAD
   </div>
     <script>
     $(document).ready(function () {
@@ -263,6 +268,37 @@
       setInterval(ajax_call, interval);
   });
 </script>
+=======
+    <!--display table-->
+<div class="container">   
+<table>
+    <thead>
+        <tr>
+            <th>activity</th>
+            <th>age</th>
+            <th>location</th>
+            <th>email</th>
+            <th>comment</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <!--Use a while loop to make a table row for every DB row-->
+        <?php while( $row = $sql->fetch()) : ?>
+        <tr>
+            <!--Each table column is echoed in to a td cell-->
+            <td><?php echo $row['activity']; ?></td>
+            <td><?php echo $row['age']; ?></td>
+            <td><?php echo $row['location']; ?></td>
+            <td><?php echo $row['email']; ?></td>
+            <td><?php echo $row['comment']; ?></td>
+            
+        </tr>
+        <?php endwhile ?>
+    </tbody>
+</table>    
+</div>
+>>>>>>> a38c472ffd9a71966ef789e7848f4119857732b7
 
     <!--Container-->
   </body>
