@@ -250,7 +250,6 @@
           </div>
       </div>
     </div>
-<<<<<<< HEAD
   </div>
     <script>
     $(document).ready(function () {
@@ -268,37 +267,6 @@
       setInterval(ajax_call, interval);
   });
 </script>
-=======
-    <!--display table-->
-<div class="container">   
-<table>
-    <thead>
-        <tr>
-            <th>activity</th>
-            <th>age</th>
-            <th>location</th>
-            <th>email</th>
-            <th>comment</th>
-
-        </tr>
-    </thead>
-    <tbody>
-        <!--Use a while loop to make a table row for every DB row-->
-        <?php while( $row = $sql->fetch()) : ?>
-        <tr>
-            <!--Each table column is echoed in to a td cell-->
-            <td><?php echo $row['activity']; ?></td>
-            <td><?php echo $row['age']; ?></td>
-            <td><?php echo $row['location']; ?></td>
-            <td><?php echo $row['email']; ?></td>
-            <td><?php echo $row['comment']; ?></td>
-            
-        </tr>
-        <?php endwhile ?>
-    </tbody>
-</table>    
-</div>
->>>>>>> a38c472ffd9a71966ef789e7848f4119857732b7
 
     <!--Container-->
   </body>
