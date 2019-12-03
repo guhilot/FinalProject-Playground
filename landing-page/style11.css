@@ -1,11 +1,38 @@
-.box{ 
+.container{
+    background: white;
+    border: 10px;
+}
+
+.box1 ul li{
+    color: black;
+    display: inline-block;
     padding: 20px;
+    
+}
+.box1 ul li:last-child{
+    float: right;
+}
+.box111 ul li{
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    background: yellow;
+    font-size: 20px;
+}
+
+.box111 ul:hover{
+    color: black;
+}
+
+
+.box{ 
+   padding: 20px;
 }
 
 
 .box1{
     height: 150px;
-    
+    text-align: center;
 }
 .box2{
     height:300px;
@@ -14,7 +41,6 @@
     background-color:turquoise;
     background-image: url(imgs/activitypic1.jpg);
     background-size: cover;
-
 }
 h4{
     text-align: center;
@@ -54,4 +80,12 @@ visibility: visible;
     opacity:0.5;
 }
 
-
+.box111 { 
+    display: inline-block;
+    padding: 20px; 
+    text-align: center;
+}
+.box111 p{
+    text-align: left;
+    font-size: 15px;
+}

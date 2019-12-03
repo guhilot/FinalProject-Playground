@@ -9,7 +9,7 @@
     if($conn->connect_error){
         die("Failed connection" . $conn->connect_error);
     }
-    $sql = "SELECT * from Activitydata";
+    $sql = "SELECT * from Activity";
 
     $result = $conn->query($sql);
     if($result->num_rows>0){
