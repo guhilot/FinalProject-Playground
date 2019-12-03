@@ -100,20 +100,7 @@
         });
     });
 
- $(document).ready(function () {
-    ajax_call = function() {
-        $.ajax({type: "GET", url: "getrecords.php", }).done(function(data){
-            var result = $.parseJSON(data);
-            var string='<table width="100%"><tr><th>#</th><th>Activity Name</th></tr>';
-            $.each( result, function( key, value ) { 
-             string += "<tr> <td>"+value['A_id'] + "</td><td> " +value['A_Name']+ "</td></tr>"; }); 
-             string += '</table>'; 
-             $("#records1").html(string);
-        })
-    };
-    var interval = 3000;
-    setInterval(ajax_call, interval);
-});
+ 
 /*
 
 */
