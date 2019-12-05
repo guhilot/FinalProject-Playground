@@ -6,9 +6,7 @@
 .box1 ul li{
     color: black;
     display: inline-block;
-    padding: 20px;
-    color: blue;
-    
+    padding: 20px;   
 }
 .box1 ul li:last-child{
     float: right;
@@ -17,7 +15,7 @@
     color: black;
     display: inline-block;
     padding: 20px;
-    background: yellow;
+    background:orange;
     font-size: 20px;
 }
 
