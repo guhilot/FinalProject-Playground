@@ -45,6 +45,8 @@
             <div class="box box1 col-xs-12">
                 <ul>
                     <li><a href="http://localhost:8080/FinalProject-Playground/landing-page/index1.html">Home</a></li>
+                    <li>Find an Activtiy Partner</li>
+            
                 </ul>
             </div>
     </div>
