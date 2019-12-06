@@ -64,7 +64,7 @@
             </div>
             <div class = "formpost box3 col-xs-6 header">
             <div class="searchpanel">
-                <div class="sb"><input type="text" class="searchbox" name="id" id="id" placeholder="Enter Course number"></div>
+                <div class="sb"><input type="text" class="searchbox" name="id" id="id" placeholder="Enter Activity number"></div>
                 <div class="btn"><input type="submit" class="searchbtn" name="searchdata" id="searchdata" value="SEARCH"></div>
             </div>
             </div>
